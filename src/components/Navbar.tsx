@@ -22,8 +22,9 @@ export default function Navbar() {
             <details>
               <summary>Info</summary>
               <ul className="p-2 bg-base-100 rounded-t-none">
-                <li><Link href="https://github.com/yourusername/geo-processor-frontend" target="_blank">GitHub</Link></li>
-                <li><Link href="https://github.com/yourusername/geo-processor-api" target="_blank">API Docs</Link></li>
+                <li><Link href="https://github.com/cristian-home/geo-processor-frontend" target="_blank">Frontend Docs</Link></li>
+                <li><Link href="https://github.com/cristian-home/geo-processor-api-gateway" target="_blank">API Gateway Docs</Link></li>
+                <li><Link href="https://github.com/cristian-home/geo-processor-api-backend" target="_blank">API Backend Docs</Link></li>
               </ul>
             </details>
           </li>
