@@ -5,6 +5,7 @@
 
 export const API_CONFIG = {
   BASE_URL: process.env.NEST_PUBLIC_API_BASE_URL || "http://localhost:3000",
+  FRONTEND_URL: process.env.FRONTEND_URL || "http://localhost:3001",
   ENDPOINTS: {
     PROCESS_POINTS: "/api/geo/process-points",
     HEALTH_CHECK: "/api/health",

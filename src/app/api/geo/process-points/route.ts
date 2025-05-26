@@ -44,6 +44,10 @@ export async function POST(req: NextRequest) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
+        "X-Frontend-URL":
+          req.headers.get("X-Frontend-URL") ||
+          process.env.FRONTEND_URL ||
+          "http://localhost:3001",
       },
       body: JSON.stringify(body),
     });

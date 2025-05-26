@@ -12,7 +12,10 @@ export async function processPoints(
       getApiUrl(API_CONFIG.ENDPOINTS.PROCESS_POINTS),
       {
         method: "POST",
-        headers: API_CONFIG.HEADERS,
+        headers: {
+          ...API_CONFIG.HEADERS,
+          "X-Frontend-URL": API_CONFIG.FRONTEND_URL,
+        },
         body: JSON.stringify({ points } as GeoPointsRequest),
       }
     );
